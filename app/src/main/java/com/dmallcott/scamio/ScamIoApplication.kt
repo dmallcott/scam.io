@@ -17,7 +17,6 @@ class ScamIoApplication: Application() {
     override fun onCreate() {
         super.onCreate()
 
-
         initLogger()
     }
 

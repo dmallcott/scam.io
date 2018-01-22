@@ -1,5 +1,15 @@
 package com.dmallcott.scamio
 
-class FirebaseManager() {
+import com.google.firebase.database.FirebaseDatabase
 
+
+
+class FirebaseManager(var database: FirebaseDatabase) {
+
+    fun isScam(phoneNumber: String): Boolean {
+        val phone = database.reference.child(phoneNumber)
+
+
+        return false
+    }
 }
